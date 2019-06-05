@@ -1,0 +1,23 @@
+type Maquina {
+  idm: String!
+  idc: String
+  tipo: String!
+  marca: String!
+  modelo: String!
+  nserie: String
+  anno: String
+}
+
+type MaquinaInput {
+    idm: String!
+  idc: String
+  tipo: String!
+  marca: String!
+  modelo: String!
+  nserie: String
+  anno: String
+}
+
+type Query {
+  getMaquinas(): [Maquina]
+}
